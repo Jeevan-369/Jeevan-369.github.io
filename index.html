@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <title>My Website</title>
+</head>
+
+<body class="dark-mode">
+        <!-- Header -->
+        <section id="header">
+          <div class="header container">
+            <div class="nav-bar">
+              <div class="nav-list">
+                <div class="hamburger">
+                  <div class="bar"></div>
+                </div>
+                <ul>
+                  <li><a href="#hero" data-after="Home">Home</a></li>
+                  <li><a href="#about" data-after="About">About</a></li>
+                  <li><a href="#education" data-after="Education">Education</a></li>
+                  <li><a href="#experience" data-after="Experience">Experience</a></li>
+                  <li><a href="#projects" data-after="Projects">Projects</a></li>
+                  <li><a href="#contact" data-after="Contact">Contact</a></li>
+                  <li class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Header -->
+
+        <!-- Hero Section  -->
+        <section id="hero">
+          <div class="hero container">
+            <div><img src="./img/your-photo.png" id="profile-picture" alt="Profile Picture" onclick="showProfileDetails()">
+              <h1>Hello,<span></span></h1>
+              <h1>My Name is <span></span></h1>
+              <h1>Jeevan Tubinakere Govindaraju</h1>
+              <a href="#contact">Hire me</a>
+              <div id="popup">
+                <div id="popup-content">
+                  <h2>More About Me</h2>
+                  <p>Graduate Student<br>Email:jeevanjeevu369@gmail.com<br>Phone:+1(314)-556-0137</p>
+                  <span id="close-popup" onclick="closePopup()">Close</span>
+              </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- End Hero Section  -->
+
+        <!-- About Section -->
+        <section id="about">
+          <div class="about container">
+            <div class="col-left">
+              <div class="about-img">
+                <img src="./img/img-2.png" alt="img">
+              </div>
+            </div>
+            <div class="col-right">
+              <h1 class="section-title">About <span>me</span></h1>
+              <p>I'm Jeevan and I'm a passionate Master of Computer Science student with a solid academic foundation and a knack for problem-solving. My journey in the world of computer science has equipped me with expertise in programming languages. I'm on the lookout for exciting internship or entry-level opportunities where I can put my skills to good use in a professional environment.
+                My true calling lies in innovation, and I'm eager to collaborate with like-minded individuals and contribute to projects that push the boundaries of what's possible. I aspire to make a meaningful impact and drive creative solutions while constantly expanding my knowledge.
+                I'm always up for a challenge and believe in the power of continuous learning. I'm looking forward to connecting with professionals who share my passion for technology, and I'm excited to explore opportunities that will help me grow and evolve in this ever-evolving field.
+<br>
+                Let's connect and explore how we can inspire innovation together!</p>
+              <a href="https://drive.google.com/file/d/1YQejYKnrulQMEdKxl0JNDTAmcnLQ_Fm3/view?usp=sharing" class="cta">Download Resume</a>
+            </div>
+          </div>
+        </section>
+        <!-- End About Section -->
+
+        
+
+
+        <!-- Education Section -->
+        <section id="education">
+          <div class="education container">
+            <div class="education-top">
+              <h1 class="section-title">Educa<span>tion</span></h1>
+            </div>
+            <div class="education-bottom">
+              <!-- Your education items go here -->
+              <div class="education-item">
+                <h2>Saint Louis University</h2>
+                <p>I'm a dedicated Master's in Computer Science student at Saint Louis University (2023-2025). I am passionate about exploring emerging technologies, committed to academic excellence, and eager to contribute to the field through research.</p>
+              </div>
+              <div class="education-item">
+                <h2>Global Academy of Technology</h2>
+                <p>Earned a Bachelor of Engineering in Information Science and Engineering from Global Academy of Technology (2019-2023) with a stellar CGPA of 8.8/10. Possesses a strong academic background and technical acumen.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- End Education Section -->
+
+     <!-- Experience Section -->
+     <section id="experience">
+      <div class="experience container">
+          <div class="experience-header">
+              <h1 class="section-title"><span>Ex</span>perience</h1>
+          </div>
+          <div class="all-experience">
+              <!-- Experience Item 1 -->
+              <div class="experience-item" id="experience1" onclick="toggleExperienceDetails('experience1')">
+                  <h1>Karnataka German Technical Training Institute</h1>
+                  <img src="./img/kgtti.png" class="company-logo" alt="KGTI Logo">
+                  <div class="experience-info">
+                      <h1>Red Hat Certified Engineer (RHCE)</h1>
+                      <h2>Karnataka German Technical Training Institute</h2>
+                      <p>Bangalore, India | Aug 2022 - Oct 2022</p>
+                      <p>During this internship and training program, I've gained valuable knowledge and skills related to Linux, an open-source operating system. I'm now capable of performing the tasks expected of a Red Hat Certified System Administrator. This includes being proficient in using essential tools, effectively managing running systems, configuring local storage, creating and setting up file systems, deploying, configuring, and maintaining systems, managing users and groups, and ensuring the security of the system. This experience has not only broadened my technical skills but also provided me with a solid foundation in Linux administration. I'm now equipped to handle a wide range of responsibilities in this field, from system maintenance to security management. This knowledge and certification will undoubtedly be an asset as I continue to pursue a career in IT or system administration. I'm excited about the opportunities and challenges that lie ahead and look forward to applying what I've learned in real-world scenarios.</p>
+                  </div>
+              </div>
+
+              <!-- Experience Item 2 -->
+              <div class="experience-item" id="experience2" onclick="toggleExperienceDetails('experience2')">
+                  <h1>1Stop.ai</h1>
+                  <img src="./img/1stop.png" class="company-logo" alt="1Stop Logo">
+                  <div class="experience-info">
+                      <h1>Student Intern</h1>
+                      <h2>1Stop.ai</h2>
+                      <p>Bangalore, India | Jun 2021 - Aug 2021</p>
+                      <p>During this period, I have successfully completed three projects related to Artificial Intelligence and Machine Learning. These projects are as follows: Recognition of Objects with Convolutional Neural Network (CNN), Handwritten Digit Classification with CNN, News Classification Using Natural Language Processing (NLP). These projects have allowed me to acquire new skills and enhance my knowledge of various deep learning algorithms. The main goal of these projects is to identify patterns within user data and leverage these patterns to make predictions, answer questions, and solve problems. This process involves analyzing data and recognizing trends to provide valuable insights. Throughout these projects, I have primarily used the Python programming language, which is widely employed in the field of AI and machine learning. This language's versatility and extensive library support have been instrumental in implementing and experimenting with different algorithms. Overall, these projects have enriched my understanding of AI and machine learning, providing me with practical experience in developing solutions for real-world problems. I look forward to further expanding my skills and contributing to the ever-evolving field of artificial intelligence.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Experience Section ends-->
+
+        
+      
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <div class="projects container">
+            <div class="projects-header">
+              <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 1</h1>
+                  <h2>Brain Computer Interface for Emergency Commands</h2>
+                  <p>This focuses on utilizing Brain-Computer Interface (BCI) technology, specifically the NeuroSky Mindlink Neuro Sensor, to enable speech communication for individuals with severe muscular illnesses. By processing raw EEG data and extracting attention levels, basic commands are generated, enhancing communication for conditions like ALS and stroke-related paralysis, fostering independence and improved quality of life.</p>
+                </div>
+                <div class="project-img">
+                  <img src="./img/img-1.png" alt="img">
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 2</h1>
+                  <h2>Text Encryption and Decryption app using various algorithms</h2>
+                  <p>
+                    This mobile application is built using Java, employing Arduino software for hardware communication. Users input plain text, choose encryption algorithms (e.g., AES, DES, MD5), and provide a key. The app encrypts the text, generating cipher text. Users send this via any messaging app, and recipients decrypt using the chosen algorithm and the sender's key.</p>
+                </div>
+                <div class="project-img">
+                  <img src="./img/img-1.png" alt="img">
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 3</h1>
+                  <h2>Voter ID management system using B+ tree indexing technique</h2>
+                  <p>The Voter ID Management System, developed in C++ features a user-friendly menu-driven interface using local file systems. It stores data on disk, allowing users to view, add, search, delete, and modify voter records. The B+ tree indexing technique optimizes record access by maintaining byte offsets in the original file.</p>
+                </div>
+                <div class="project-img">
+                  <img src="./img/img-1.png" alt="img">
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 4</h1>
+                  <h2>Covid Bed Slot Booking System using python flask and MySQL</h2>
+                  <p>
+                    The COVID-19 bed slot booking system, developed with Python Flask, MySQL, and Bootstrap, offers a user-friendly solution for patients to reserve hospital beds. Utilizing XAMPP for efficient database management, this platform streamlines COVID care, providing a robust and accessible tool for securing vital medical resources during the ongoing pandemic.</p>
+                </div>
+                <div class="project-img">
+                  <img src="./img/img-1.png" alt="img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects Section -->
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <div class="contact container">
+            <div>
+              <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                <div class="contact-info">
+                  <h1>Phone</h1>
+                  <h2>+1 (314) 556-0137</h2>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                <div class="contact-info">
+                  <h1>Email</h1>
+                  <h2>jeevanjeevu369@gmail.com</h2>
+                </div>
+              </div>
+              <!-- LinkedIn -->
+              <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></div>
+                <div class="contact-info">
+                  <h1>LinkedIn</h1>
+                  <h2><a href="https://www.linkedin.com/in/jeevan-tubinakere-govindaraju-404b26299" target="_blank">LinkedIn Profile</a></h2>
+                </div>
+              </div>
+
+              <!-- Form -->
+                <div class="column right">
+                  <div class="text">Message me</div>
+                        <form action="https://formsubmit.co/jeevanjeevu369@gmail.com" method="POST" />
+                          <div class="fields">
+                            <div class="field name">
+                              <input type="text" name="Name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                              <input type="email" name="Email" placeholder="Email" required>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                          </div>
+                          <div class="field textarea">
+                            <textarea cols="30" rows="10" name="Message" placeholder="Message.." required></textarea>
+                          </div>
+                          <div class="button-area">
+                            <button type="submit" >Send message</button>
+                          </div>
+                        </form>
+                </div>
+              </div>
+            </section>
+    <!-- End Contact Section -->
+    <footer>
+      <p>&copy; 2023  Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
